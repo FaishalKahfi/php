@@ -24,6 +24,10 @@ error_reporting(E_ALL);
         $nama = $_POST['nama'];
         $sandi = $_POST['sandi'];
         mysqli_query($koneksi, "INSERT INTO users (nama, sandi) VALUES('$nama', '$sandi')");
+        
+        // Mencegah form resubmission saat refresh (PRG Pattern)
+        header("Location: index.php");
+        exit();
     }
 
     // Logika Delete
