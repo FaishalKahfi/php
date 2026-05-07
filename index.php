@@ -279,7 +279,6 @@ if(isset($_GET['hapus'])){
     <div class="container">
         <div class="header">
             <h1>User Dashboard</h1>
-            <p>Kelola data pengguna dengan antarmuka yang modern</p>
         </div>
 
         <div class="card">
